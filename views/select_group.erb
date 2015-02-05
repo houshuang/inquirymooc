@@ -1,0 +1,20 @@
+<html>
+  <head><title>Choosing group</title></head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <body>
+    <h1>Choosing Study Group</h1>
+    <form action="/study-group" method="post">
+      <p>Hi, please choose which study group you'd like to belong to. &nbsp;
+      <select name='group'>
+      <option value='red'>Red</option>
+      <option value="blue">Blue</option><br>
+</select>
+
+<br><br><p>What would you like us to call you? <input type="text" name="callname"><p>
+      <input type='submit' value='Submit' />
+      <% @tp.to_params.each do |key, value| %>
+        <input type="hidden" name="launch_params[<%= key %>]" value="<%= value %>" />
+      <% end%>
+    </form>
+  </body>
+</html>
