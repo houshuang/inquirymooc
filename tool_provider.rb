@@ -1,3 +1,6 @@
+# Example integration with LTI and OpenEdX, see http://reganmian.netblog/2015/02/20/openedx-and-lti-pedagogical-scripts-and-sso
+# Released under public domain by Stian Håklev, shaklev@gmail.com, 2015
+
 require 'sinatra'
 require 'ims/lti'
 # must include the oauth proxy object

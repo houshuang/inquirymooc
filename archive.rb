@@ -1,3 +1,4 @@
+# stuff I stripped from the original file, not needed
 
 post '/signature_test' do
   erb :proxy_setup
